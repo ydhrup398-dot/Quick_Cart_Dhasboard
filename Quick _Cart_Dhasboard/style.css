@@ -1,0 +1,164 @@
+/* ===== GLOBAL (GLASS BACKGROUND) ===== */
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  background: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar span {
+  font-weight: 500;
+}
+
+/* ===== CARD (GLASS EFFECT) ===== */
+.card {
+  height: 100%;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  transition: 0.4s ease;
+  overflow: hidden;
+}
+
+/* Hover Glow Effect */
+.card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 0 25px rgba(255,255,255,0.25);
+}
+
+/* ===== IMAGE ===== */
+.card img {
+  height: 180px;
+  object-fit: contain;
+  padding: 15px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+}
+
+/* ===== TEXT ===== */
+.card h6 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  min-height: 40px;
+}
+
+/* Price Glow */
+.card p:nth-child(2) {
+  font-weight: bold;
+  color: #00ffcc;
+  font-size: 16px;
+}
+
+/* Category Badge */
+.card p.text-muted {
+  background: rgba(255,255,255,0.2);
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 8px;
+  font-size: 11px;
+  color: #fff !important;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 6px 12px;
+  border: none;
+}
+
+/* Neon Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #00ff9d, #00c853);
+}
+
+/* Hover */
+.btn:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+/* ===== FILTERS ===== */
+select, input {
+  border-radius: 20px !important;
+  border: none;
+  padding: 10px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+select::placeholder,
+input::placeholder {
+  color: #eee;
+}
+
+select:focus, input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* ===== LOADER ===== */
+#loader {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ===== ERROR ===== */
+#error {
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+/* ===== MODAL ===== */
+.modal-content {
+  border-radius: 20px;
+  background: #fff;
+  color: #000;
+}
+
+#modalImage {
+  max-height: 250px;
+  object-fit: contain;
+}
+
+/* ===== CART PAGE ===== */
+#cartItems .card {
+  background: white;
+  color: black;
+  border-radius: 15px;
+}
+
+#cartItems img {
+  height: 80px;
+}
+
+/* ===== TOTAL ===== */
+h4 {
+  color: white;
+  font-weight: 600;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .card img {
+    height: 140px;
+  }
+
+  .card:hover {
+    transform: none;
+  }
+}
